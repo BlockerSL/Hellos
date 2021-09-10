@@ -24,24 +24,24 @@
       </el-form>
       <Buttons @generateEquation="value = $event" />
       <el-alert
-        type="سەرکەوتوبو"
+        type=""
         class="display"
         :closable="false"
         v-show="solution"
         show-icon
         center
       >
-        <div v-html="solution" style="font-size: 30px"/>
+        <div v-html="solution" style="font-size: 15px"/>
       </el-alert>
       <el-alert
-        type="ھەڵەیە"
+        type="erore"
         class="display"
         :closable="false"
         v-show="error"
         show-icon
         center
       >
-        <span style="font-size: 30px">{{ error }}</span>
+        <span style="font-size: 15px">{{ error }}</span>
       </el-alert>
     </el-main>
   </div>
@@ -108,7 +108,7 @@ export default {
 
 <style scoped>
 h1 {
-  font-size: 45px;
+  font-size: 20px;
   mar-bottom: 10px;
 }
 
