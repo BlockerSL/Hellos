@@ -15,7 +15,7 @@
           <el-button
             type="primary"
             icon="el-icon-magic-stick"
-            @click="balance"
+            @click="ھاوسەنگ"
             :loading="isBalancing"
           >
             {{ isBalancing ? "Balancing..." : "Balance"}}
@@ -24,7 +24,7 @@
       </el-form>
       <Buttons @generateEquation="value = $event" />
       <el-alert
-        type="success"
+        type="سەرکەوتوبو"
         class="display"
         :closable="false"
         v-show="solution"
@@ -34,7 +34,7 @@
         <div v-html="solution" style="font-size: 30px"/>
       </el-alert>
       <el-alert
-        type="error"
+        type="ھەڵەیە"
         class="display"
         :closable="false"
         v-show="error"
@@ -108,7 +108,7 @@ export default {
 
 <style scoped>
 h1 {
-  font-size: 60px;
+  font-size: 45px;
   mar-bottom: 10px;
 }
 
