@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <el-main>
-      <h1>هاوسەنگ کردنی هاوکێشە</h1>
+      <h1> هاوسەنگی کیمیایی </h1>
       <el-form inline status-icon @submit.native="submit">
         <el-form-item>
           <el-input
-            placeholder="هاوکێشەی کیمای"
+            placeholder="هاوکێشەی کیمیایی"
             class="equation"
             v-model="value"
             clearable
@@ -15,7 +15,7 @@
           <el-button
             type="primary"
             icon="el-icon-magic-stick"
-            @click="ھاوسەنگ"
+            @click="button"
             :loading="isBalancing"
           >
             {{ isBalancing ? "Balancing..." : "Balance"}}
@@ -24,7 +24,7 @@
       </el-form>
       <Buttons @generateEquation="value = $event" />
       <el-alert
-        type=""
+        type="success"
         class="display"
         :closable="false"
         v-show="solution"
